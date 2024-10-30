@@ -1,5 +1,9 @@
 <h1 align="center">Hi 👋, I'm Sarper ERBAR</h1>
 <h3 align="center">A passionate computer engineering student from Türkiye</h3>
+    <td>
+      <img align="right" src="https://www.icegif.com/wp-content/uploads/icegif-4382.gif" width="250" />
+    </td>
+
 
 - 📫 How to reach me **erbarsarper@gmail.com**
 
