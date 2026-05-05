@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="description" content="Sarper ERBAR's personal portfolio website." />
+    <meta name="author" content="Sarper ERBAR" />
+    <meta name="keywords" content="Sarper ERBAR, portfolio, developer,programming, coding" />
+    <meta name="robots" content="index, follow" />
+    <link rel="icon" href="assets/favicon.ico" type="image/x-icon" />
+    <title>Sarper ERBAR</title>
+
+    <!-- bootstrap css cdn link  -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+
+    <!-- custom css file -->
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- google font link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- bootstrap icon cdn link  -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css"
+    />
+
+    <!-- for adding animation to website we have use AOS library 
+    AOS Library css file cdn link -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <!-- jquery cdn link  -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  </head>
+  <body>
+    <!-- navbar starts -->
+    <nav
+    id="navbar-top"
+    class="navbar navbar-expand-lg navbar-light bg-white sticky-top"
+  >
+    <div class="container-fluid px-5">
+      <a class="navbar-brand fw-bold fs-2" href="#" style="color: black"
+        >sarperbar</a
+      >
+      <button
+        class="nav-menu d-md-none"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarNav"
+      >
+        <i class="bi bi-menu-button-fill"></i>
+      </button>
+      <div
+        class="collapse navbar-collapse justify-content-center"
+        id="navbarNav"
+      >
+        <ul class="navbar-nav gap-4" style="font-size: 1.1rem">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#service">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#portfolio">Portfolio</a>
+          </li>
+
+        </ul>
+      </div>
+      <button class="c-btn ms-4 py-2 px-4 rounded-pill d-none d-md-block" id="contactButton">
+        Contact
+    </button>
+    
+    <script>
+    document.getElementById("contactButton").addEventListener("click", function() {
+        const contactSection = document.getElementById("contact");
+        if (contactSection) {
+            contactSection.scrollIntoView({ behavior: "smooth" });
+        }
+    });
+    </script>
+    
+    
+      
+    </div>
+  </nav>
+
+    <!-- navbar ends here -->
+
+    <!-- home section starts  -->
+    <section class="home pt-5 pb-5" id="home">
+      <div class="row justify-content-evenly align-middle">
+        <!-- here data-aos is used for adding aos animation  -->
+        <div class="col-10 col-md-6 text-center text-md-start" data-aos="slide-right">
+          <h2 style="color: #3f396d">
+            Hello! I Am <br /><span class="c-orange">Sarper ERBAR</span>
+          </h2>
+          <p class="text-muted">
+            I'm a computer engineer focused on game development and software solutions.
+          </p>
+          <button class="c-btn h-btn mt-3 py-3 px-5 rounded-pill" onclick="window.location.href='mailto:erbarsarper@gmail.com'" id="hireButton">
+            Hire Me
+          </button>
+          <a href="mailto:erbarsarper@gmail.com" class="link ms-4 d-none">text me</a>
+        </div>
+        <div class="col-10 col-md-4 d-none d-md-block">
+          <img src="images/sarper.png" class="img-fluid" alt="" />
+        </div>
+      </div>
+    </section>
+    <script>
+      document.getElementById('hireButton').addEventListener('mouseover', function() {
+        this.innerText = 'Text Me'; 
+      });
+    
+      document.getElementById('hireButton').addEventListener('mouseout', function() {
+        this.innerText = 'Hire Me'; 
+      });
+    </script>
+    
+    
+    
+    
+    <!-- home section ends here -->
+
+    <!-- expertise section starts -->
+    <section class="expertise mt-5" id="service">
+      <div class="heading text-center">
+        <small>My Experience</small>
+        <h3>
+          and many more projects <br />
+          I want to work on
+        </h3>
+      </div>
+      <div class="row justify-content-evenly mt-5">
+        <div class="col-12 col-md-4 d-flex flex-column align-items-center" data-aos="fade-up">
+          <div class="service-card text-center">
+            <div class="content mt-3">
+              <h4 class="service-title">Microservices</h4>
+              <p class="text-muted">
+                Mobile, web applications built on microservices.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-4 d-flex flex-column align-items-center" data-aos="fade-up">
+          <div class="service-card text-center">
+            <div class="content mt-3">
+              <h4 class="service-title">Game Development</h4>
+              <p class="text-muted">
+                Experience on Unity and Unreal Engine 5.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-4 d-flex flex-column align-items-center" data-aos="fade-up">
+          <div class="service-card text-center">
+            <div class="content mt-3">
+              <h4 class="service-title">Blockchain</h4>
+              <p class="text-muted">
+                Blockchain applications. NFT and Coin minting.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="post col-md-4 game all col-10 mt-3 mt-md-0" data-aos="fade-up">
+  <div class="card">
+    <div class="card-body text-center">
+      <h4 class="card-title">Crop Collection</h4>
+      <span class="badge bg-secondary badge-pill">Unity</span>
+      <span class="badge bg-secondary badge-pill">Mobile</span>
+      <span class="badge bg-secondary badge-pill mb-2">Indie Farming</span><br />
+      <div class="mt-2">
+        <a href="https://github.com/sarperbar/CropCollectionGame" class="link me-2" target="_blank">GitHub</a>
+        <a href="https://lnkd.in/dvvZUyKt" class="link me-2" target="_blank">App Store</a>
+        <a href="https://lnkd.in/d_cr9dmF" class="link" target="_blank">Play Store</a>
+      </div>
+    </div>
+  </div>
+</div>
+    </section>
+    
+    
+    <!-- expertise section ends here -->
+
+    
+
+    <!-- skill section starts -->
+    <section class="skill mt-5 py-5" id="about">
+      <div class="row justify-content-center"> 
+        <div class="col-10 col-md-5 skill-detail" data-aos="fade-up">
+          <div class="heading mt-5 mt-md-3">
+            <small data-aos="fade-right">My Skills</small>
+            <h3 data-aos="zoom-in">Curious about my experience? Download my CV!</h3>
+            <p class="text-muted" data-aos="fade-up">
+              In our graduation project, we worked on Microservice architecture and I worked on different tools.
+            </p>
+            <p class="text-muted" data-aos="fade-up">
+              I look forward to adding to my experience.
+            </p>
+            <button class="c-btn h-btn mt-3 py-3 px-5 rounded-pill" data-aos="flip-up">
+              <a
+                href="documents/SarperERBAR_CV.pdf"
+                download="SarperErbarCV"
+                target="_blank"
+                style="text-decoration: none; color: #fff;"
+              >Download CV</a>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    
+    <!-- skill section end here -->
+
+    <!-- portfolio section starts here -->
+    <section class="portfolio" id="portfolio">
+      <div class="heading text-center pt-5">
+        <small>Sarper's Works</small>
+        <h3>Check My Portfolio</h3>
+      </div>
+
+      <div id="myBtnContainer" class="text-center mt-4">
+        
+        <!-- <button class="filter-item" data-filter="brand">Brand</button> -->
+      </div>
+      <div class="portfolio-body">
+        <div class="row justify-content-evenly px-4">
+          <div class="post col-md-4 game all col-10 mt-3 mt-md-0" data-aos="fade-up">
+            <div class="card">
+              
+              <div class="card-body text-center">
+                <h4 class="card-title">AR Hunter Game</h4>
+                <span class="badge bg-secondary badge-pill">Unity</span>
+                <span class="badge bg-secondary badge-pill">AR</span>
+                <span class="badge bg-secondary badge-pill mb-2">Game</span
+                ><br />
+                <a href="https://github.com/sarperbar/BitesJRDevProjects" class="link" target="_blank">Read More</a>
+              </div>
+            </div>
+          </div>
+          <div class="post col-md-4 webapp all col-10 mt-3 mt-md-0" data-aos="fade-up">
+            <div class="card">
+               
+              <div class="card-body text-center">
+                <h4 class="card-title">Fitness Challenge App</h4>
+                <span class="badge bg-secondary badge-pill">HTML&CSS</span>
+                <span class="badge bg-secondary badge-pill">JavaScript</span>
+                <span class="badge bg-secondary badge-pill mb-2">WebApp</span
+                ><br />
+                <a href="https://github.com/sarperbar/FitnessChallengeApp-RazorPage/tree/sarperfinal" class="link" target="_blank">Read More</a>
+              </div>
+            </div>
+          </div>
+          <div class="post col-md-4 website all col-10 mt-3 mt-md-0" data-aos="fade-up">
+            <div class="card">
+              <div class="card-body text-center">
+                <h4 class="card-title">Final Projcet's Web Page</h4>
+                <span class="badge bg-secondary badge-pill">HTML&CSS</span>
+                <span class="badge bg-secondary badge-pill">JavaScript</span>
+                <span class="badge bg-secondary badge-pill mb-2">Website</span
+                ><br />
+                <a href="https://github.com/sarperbar/projectwebpage" class="link" target="_blank">Read More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+<div class="row justify-content-evenly mt-4 px-4">
+  <!-- Blockchain Diving App -->
+  <div class="post col-md-4 webapp all col-10 mt-3 mt-md-0" data-aos="fade-up">
+    <div class="card">
+      <div class="card-body text-center">
+        <h4 class="card-title">Blockchain Diving App</h4>
+       <span class="badge bg-secondary badge-pill">Flutter</span>
+        <span class="badge bg-secondary badge-pill">Springboot/Java</span>
+      <span class="badge bg-secondary badge-pill mb-2">WebApp</span><br />
+        <a href="https://github.com/sarperbar/diveapp" class="link" target="_blank">Read More</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- YENİ EKLEME: Crop Collection -->
+  <div class="post col-md-4 game all col-10 mt-3 mt-md-0" data-aos="fade-up">
+    <div class="card">
+      <div class="card-body text-center">
+        <h4 class="card-title">Crop Collection</h4>
+        <span class="badge bg-secondary badge-pill">Unity</span>
+        <span class="badge bg-secondary badge-pill">C#</span>
+        <span class="badge bg-secondary badge-pill mb-2">Indie Farming</span><br />
+        <a href="https://cropcorpstudios.com.tr/" class="link" target="_blank">Read More</a>
+      </div>
+    </div>
+  </div>
+</div>                
+        
+      </div>
+    </section>
+
+    <!-- language section starts here -->
+
+    <section class="language py-5" id="language">
+      <div class="heading text-center">
+        <small>Languages I Speak</small>
+        <h3>Languages</h3>
+      </div>
+      <div class="row justify-content-evenly mt-5">
+        <div class="col-md-4 col-10 language-details" data-aos="fade-up">
+          <div class="language-card text-center">
+            <img src="images/uk.png" alt="English Flag" class="img-fluid" style="width: 50px; height: auto;">
+            <h4 class="language-title">English</h4>
+            <p class="text-muted">Fluent</p>
+          </div>
+        </div>
+        <div class="col-md-4 col-10 language-details" data-aos="fade-up">
+          <div class="language-card text-center">
+            <img src="images/turkey.png" alt="Turkish Flag" class="img-fluid" style="width: 50px; height: auto;">
+            <h4 class="language-title">Turkish</h4>
+            <p class="text-muted">Native</p>
+          </div>
+        </div>
+        <div class="col-md-4 col-10 language-details" data-aos="fade-up">
+          <div class="language-card text-center">
+            <img src="images/russia.png" alt="Russian Flag" class="img-fluid" style="width: 50px; height: auto;">
+            <h4 class="language-title">Russian</h4>
+            <p class="text-muted">Elementary</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    
+
+
+    
+    
+<!-- language section ends here -->
+
+
+
+
+    
+
+   <!-- language section ends here -->
+    <!-- contact section starts -->
+    <section class="contact py-5" id="contact">
+      <div id="contactsarper"class="heading text-center">
+        <small>Get in Touch</small>
+        <h3>Contact</h3>
+      </div>
+      <div class="row justify-content-evenly mt-5">
+        <div class="col-md-5 col-10 contact-details" data-aos="slide-right">
+        
+          <div class="row justify-content-evenly">
+            <div class="col-1">
+              <i class="bi bi-send-fill"></i>
+            </div>
+            <div class="col-11">
+              <a href="mailto:erbarsarper@gmail.com">erbarsarper@gmail.com</a>
+            </div>
+          </div>
+          <div class="row justify-content-evenly mt-3">
+            <div class="col-1">
+              <a href="https://www.linkedin.com/in/sarperbar" target="_blank">
+                <i class="bi bi-linkedin"></i>
+              </a>
+            </div>
+            <div class="col-11">
+              <a href="https://www.linkedin.com/in/sarperbar" target="_blank">LinkedIn/sarperbar</a>
+            </div>
+          </div>
+          <div class="row justify-content-evenly mt-3">
+            <div class="col-1">
+              <a href="https://github.com/sarperbar" target="_blank">
+                <i class="bi bi-github"></i>
+              </a>
+            </div>
+            <div class="col-11">
+              <a href="https://github.com/sarperbar" target="_blank">GitHub/sarperbar</a>
+            </div>
+          </div>
+          <div class="row justify-content-evenly">
+            <div class="col-1">
+              <i class="bi bi-geo-alt-fill"></i>
+            </div>
+            <div class="col-11">
+              <p><br>Türkiye</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    
+    <!-- contact section ends here -->
+
+    <button
+      type="button"
+      class="btn btn-floating btn-lg rounded-pill"
+      id="btn-back-to-top"
+    >
+      <i class="bi bi-arrow-up"></i>
+    </button>
+
+    <!-- footer section starts  -->
+    <footer class="text-center text-muted py-4">
+      <h3 class="text-white pt-4" data-aos="fade-up">sarperbar</h3>
+      <div class="link-group mt-5" data-aos="fade-up">
+        <a href="#home">Home</a>
+        <div class="vr"></div>
+        <a href="#about">About</a>
+        <div class="vr"></div>
+        <div class="vr"></div>
+        <a href="#portfolio">portfolio</a>
+        <div class="vr"></div>
+        <div class="vr"></div>
+        <a href="#contact">Contact</a>
+      </div>
+      <div class="social-links mt-5" data-aos="fade-up">
+        <a href="https://www.linkedin.com/in/sarperbar" target="_blank" class="social-icon linkedin">
+            <i class="bi bi-linkedin"></i>
+        </a>
+        <a href="https://www.instagram.com/sarperbar" target="_blank" class="social-icon instagram">
+            <i class="bi bi-instagram"></i>
+        </a>
+        <a href="https://github.com/sarperbar" target="_blank" class="social-icon github">
+            <i class="bi bi-github"></i>
+        </a>
+    </div>
+    
+      <hr class="text-muted my-4" />
+
+      <p>Sarper ERBAR</p>
+    </footer>
+    <!-- footer section ends here -->
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+    
+      AOS.init({
+        duration: 1000,
+        offset: 50,
+      });
+    </script>
+    <script src="js/script.js"></script>
+    
+  </body>
+</html>
